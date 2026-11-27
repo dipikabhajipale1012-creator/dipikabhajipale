@@ -1,35 +1,57 @@
 # Dipika Bhajipale — Portfolio
 
-Responsive single-page developer portfolio built with semantic HTML, CSS, and vanilla JavaScript. No framework or build step is required.
+A responsive, single-page developer portfolio for Dipika Prakash Bhajipale, built with semantic HTML, CSS, and vanilla JavaScript. The site presents her profile, technical toolkit, projects, education, certifications, and contact links without requiring a framework or build process.
+
+## Live site
+
+- Repository: https://github.com/dipika-bhajipale/dipikabhajipale
+- Email: dipikabhajipale1012@gmail.com
+
+## Features
+
+- Dark, technical/editorial visual design
+- Responsive desktop and mobile navigation
+- Loading/boot screen and scroll progress indicator
+- Intersection-based reveal animations
+- Active navigation highlighting based on the visible section
+- About, skills, projects, journey, and contact sections
+- Downloadable resume
+- Keyboard-friendly navigation, skip link, and reduced-motion support
+- CSS-generated project artwork rather than external image assets
+
+## Project structure
+
+```text
+.
+├── index.html                         # Page structure and content
+├── styles.css                         # Layout, visual design, and responsive styles
+├── script.js                          # Navigation, boot screen, reveal, and scroll behavior
+├── favicon.svg                        # Site favicon
+├── Dipika-Bhajipale-Resume.pdf        # Downloadable resume
+└── README.md
+```
 
 ## Run locally
-1. Extract this ZIP.
-2. Open a terminal in `dipika-portfolio`.
-3. Run `python -m http.server 8000`.
-4. Visit http://localhost:8000.
 
-## Files
-- `index.html` — page structure and resume-based content
-- `styles.css` — visual design, responsive layout, and animations
-- `script.js` — loading sequence, responsive menu, scroll progress, active navigation, and reveal effects
-- `assets/Dipika-Bhajipale-Resume.pdf` — supplied resume used by the download link
-- `assets/favicon.svg` — original monogram favicon
+No dependencies or build step are required.
 
-## Included
-- Dark editorial/technical visual direction
-- Loading intro, scroll reveal, scroll progress, active navigation
-- Responsive navigation with Escape-to-close behavior
-- About, skills, projects, education, certifications, and contact
-- Email, LinkedIn, GitHub, live project, source-code, and resume links
-- CSS-generated project preview artwork (not live-site screenshots)
-- Reduced-motion and keyboard focus accommodations
+```bash
+git clone https://github.com/dipika-bhajipale/dipikabhajipale.git
+cd dipikabhajipale
+python -m http.server 8000
+```
 
-## Accuracy notes
-- No employment or internship history is claimed because none is listed in the supplied resume.
-- Degree timing is expressed as expected June 2027; an unverified start year is not stated.
-- Phone is omitted because the resume masks it.
-- No personal photo was supplied, so an original typographic monogram is used.
-- Project artwork is illustrative, not a screenshot of the live applications.
+Then open http://localhost:8000 in a browser.
 
-## Reference limitation
-The reference URL could not be fully retrieved in this environment; its loaded page, interactions, and responsive states were not verifiable. This implementation uses the accessible dark technical direction and loading motif, but is not claimed to be a pixel-perfect recreation. A full-page screenshot or screen recording of the loaded reference is needed for exact visual matching.
+You can also open `index.html` directly, although a local HTTP server is recommended.
+
+## Technology
+
+- HTML5 — page structure and accessible navigation
+- CSS3 — responsive layouts, animations, and project visuals
+- JavaScript — menu interactions, reveal effects, section tracking, and scroll progress
+- Google Fonts — Space Grotesk and DM Mono
+
+## Accessibility
+
+The page includes a skip-to-content link, semantic sections and landmarks, visible keyboard focus, `aria-expanded` and `aria-current` state, Escape-to-close menu behavior, and a `prefers-reduced-motion` fallback.
